@@ -7,7 +7,7 @@ from openai import OpenAI # type: ignore
 import json
 
 ## TYPICALLY LIVES IN .ENV I KNOW, NO TIME!
-OPEN_AI_API_KEY = ''
+OPEN_AI_API_KEY = None  # Replace with your OpenAI API key
 
 
 app = Flask(__name__)

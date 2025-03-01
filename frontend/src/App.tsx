@@ -6,9 +6,11 @@ import { VersionManager } from "./components/VersionManager";
 function TranscriptionText({
   transcription,
   loading,
+  error,
 }: {
   transcription: string;
   loading: boolean;
+  error: boolean | null;
 }) {
   if (loading) {
     return (
@@ -17,6 +19,17 @@ function TranscriptionText({
         <div className="w-full h-4 bg-gray-200 rounded mb-3 animate-pulse" />
         <div className="w-full h-4 bg-gray-200 rounded mb-3 animate-pulse" />
         <div className="w-3/4 h-4 bg-gray-200 rounded animate-pulse" />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="mt-8 p-4 bg-red-100 rounded-lg">
+        <h2 className="font-semibold mb-2 text-red-600">Error:</h2>
+        <p className="text-red-600">
+          {error || "There was an error, please try again"}
+        </p>
       </div>
     );
   }
@@ -60,6 +73,7 @@ function App() {
         <TranscriptionText
           transcription={transcription}
           loading={isTranscribing}
+          error={error}
         />
         <VersionManager />
       </div>

@@ -20,12 +20,14 @@ THIS IS THE MOST IMPORTANT FILE IN THE ENTIRE REPO! HUMAN WRITING ONLY! NO AI AL
 2. Loading State:
 
 - Used a skelton instead of a spinner, skeletons allow for better UX and the lets you set space for text to fall gracefully and protext against layout shift.
+- also, we should for the users to wait and not click into another record while we have a transcription working, for now.
+- right now, no error state,
 
 3. Version Compatitbility System:
 
 - not sure if I fully understand this, but going w/ my assumptions that may be incorrect;
 - created a modal for the client to handle if versions are out of sync
-- the modal was not modaling, I need to put it in a react portal, otherwise Id build a vanilla modal
+- the modal was acting weird, I thnk I ran into some issues w/ tailwind, Ideally I think this is a toast that pops in right corner, users modify from there.
 
 ugh;
 ran into some problems;
