@@ -46,15 +46,14 @@ def categorize_with_openai(transcription_string: str) -> Dict[str, Any]:
         Be precise and only include information explicitly mentioned in the transcription.
         """
         
-        # Call OpenAI API with careful error handling
         response = client.chat.completions.create(
-            model="gpt-4-turbo",  # Use appropriate model version
+            model="gpt-4-turbo", 
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": transcription_string}
             ],
-            response_format={"type": "json_object"},  # Ensure JSON response
-            temperature=0.2,  # Low temperature for consistent categorization
+            response_format={"type": "json_object"}, 
+            temperature=0.2,  
             max_tokens=500
         )
         
