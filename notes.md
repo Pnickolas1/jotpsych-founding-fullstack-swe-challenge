@@ -1,5 +1,13 @@
 THIS IS THE MOST IMPORTANT FILE IN THE ENTIRE REPO! HUMAN WRITING ONLY! NO AI ALLOWED!
 
+Peter's thoughts below:
+
+# PLEASE ADD a OPEN_AI_API_KEY in app.py to start
+
+```
+PLEASE ADD a OPEN_AI_API_KEY in app.py to start!!
+```
+
 ### pulled repo and got started @ appx 8:58 AM central time Saturday, 3/1/25
 
 ### warning - this is stream on concious coding, their will be typos, random thoughts and ideas that sound good that will likely end up being terrible ideas
